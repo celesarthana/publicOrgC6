@@ -1,6 +1,6 @@
 jobs:
   include:
-      - os: linux
+        os: linux
         language: c
         dist: bionic
         arch: amd64
@@ -8,7 +8,7 @@ jobs:
         jobs:
         include:
       - stage: "sleep 109"
-      script: sleep 10
+         script: sleep 10
 
 
 #       language: c
