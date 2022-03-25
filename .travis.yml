@@ -1,19 +1,13 @@
 jobs:
   include:
         os: linux
-        language: c
-        dist: bionic
+        language: c   
+        dist: bionic   
         arch: amd64
         rvm : 2.6.3
-        jobs:
-        include:
-      - stage: "sleep 109"
-         script: sleep 10
-
-
-#       language: c
-#       arch: amd64
-#       script:
-#         - clang -coverage -O0 hello_world.c -o hello_world
-#         - ./hello_world
+        stage: "sleep 109"
+       script:
+         - sleep 10
     
+        
+
